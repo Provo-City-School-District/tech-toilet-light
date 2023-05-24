@@ -47,9 +47,9 @@ while True:
     if not bathroom1.value and not bathroom2.value:
         set_pixels((250, 0, 0))
     elif not bathroom1.value or not bathroom2.value:
-        for x in range(75, 250, 10):
-            set_pixels((x, 20, x))
-        for x in range(250, 75, -10):
-            set_pixels((x, 20, x))
+        for x in range(250, 100, -10):
+            set_pixels((50, x, x))
+        for x in range(250, 100, 10):
+            set_pixels((50, x, x))
     else:
         set_pixels((0, 250, 0))
