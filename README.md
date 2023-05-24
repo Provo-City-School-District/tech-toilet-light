@@ -2,7 +2,7 @@
 
 
 
-##optimizations made:
+## optimizations made:
 
 - The wheel function now uses modulo (%) to ensure pos is always within 0-255, avoiding repeated checks.
 - The rainbow_cycle function's inner loop now uses the optimized wheel function directly to set the pixel colors, reducing function calls.
